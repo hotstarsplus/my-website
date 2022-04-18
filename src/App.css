@@ -1,0 +1,92 @@
+@import '~antd/dist/antd.css';
+
+/**走马灯父亲盒子*/
+.fatherbody{
+  position: relativae;
+}
+
+/**走马灯切换-----start*/
+.prev{
+  position: absolute;
+  left: 25px;
+  top:450px;
+  z-index: 2;
+  font-size: 40px;
+  color:white;
+}
+
+.next{
+  position: absolute;
+  right: 25px;
+  top:450px;
+  z-index: 2;
+  font-size: 40px;
+  color:white;
+}
+/**走马灯切换-----end*/
+
+/** 走马灯图*/
+.contentStyle{
+  height: 1000px;
+  overflow: hidden;
+  top: 200px;
+}
+
+/**回到顶部样式*/
+.upStyle{
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 30%;
+  background-color: #1088e9;
+  color: #fff;
+  text-align: center;
+  font-size: 14;
+}
+
+/**div动画移动静态------start*/
+.moveStaticDiv{
+  height: 400px;
+  width: 1000px;
+  margin: 0 auto;
+  z-index: 2;
+  text-align: center;
+  line-height: 150px;
+}
+
+/**div动画移动------start*/
+.moveupdiv{
+  animation-name: move;
+  animation-delay: 0s;
+  animation-duration:1s;
+  animation-fill-mode: forwards;
+}
+
+.movedowndiv{
+  animation-name: movedown;
+  animation-delay: 0s;
+  animation-duration:1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes move{
+  0%{
+    transform: translate(0,0);
+    background-color: white;
+  }
+  100%{
+    transform: translate(0,-90px);
+    background-color: rgb(255, 255, 255);
+  }
+}
+@keyframes movedown{
+  0%{
+    transform: translate(0,-90px);
+    background-color: rgb(255, 255, 255);
+  }
+  100%{
+    transform: translate(0,0);
+    background-color: white;
+  }
+}
+/**div动画移动------end*/

@@ -1,0 +1,7 @@
+@import '~antd/dist/antd.css';
+
+.imgDiv{
+    width: 200px;
+    height: 300px;
+    border: 10px solid red;
+}
