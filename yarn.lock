@@ -3061,7 +3061,7 @@ combined-stream@^1.0.8:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@^2.20.0:
+commander@2, commander@^2.20.0:
   version "2.20.3"
   resolved "http://192.168.4.61:4873/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha1-/UhehMA+tIgcIHIrpIA16FMa6zM=
@@ -3432,6 +3432,16 @@ csstype@^3.0.2:
   resolved "http://192.168.4.61:4873/csstype/-/csstype-3.0.11.tgz#d66700c5eacfac1940deb4e3ee5642792d85cd33"
   integrity sha512-sa6P2wJ+CAbgyy4KFssIb/JNMLxFvKF1pCYCSXS8ZMuqZnMsrxqI2E5sPyoTpxoPU/gVZMzr2zjOfg8GIZOMsw==
 
+d3-array@^1.2.0:
+  version "1.2.4"
+  resolved "http://192.168.4.61:4873/d3-array/-/d3-array-1.2.4.tgz#635ce4d5eea759f6f605863dbcfc30edc737f71f"
+  integrity sha1-Y1zk1e6nWfb2BYY9vPww7cc39x8=
+
+d3-polygon@^1.0.3:
+  version "1.0.6"
+  resolved "http://192.168.4.61:4873/d3-polygon/-/d3-polygon-1.0.6.tgz#0bf8cb8180a6dc107f518ddf7975e12abbfbd38e"
+  integrity sha1-C/jLgYCm3BB/UY3feXXhKrv7044=
+
 damerau-levenshtein@^1.0.7:
   version "1.0.8"
   resolved "http://192.168.4.61:4873/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz#b43d286ccbd36bc5b2f7ed41caf2d0aba1f8a6e7"
@@ -3747,6 +3757,11 @@ duplexer@^0.1.2:
   version "0.1.2"
   resolved "http://192.168.4.61:4873/duplexer/-/duplexer-0.1.2.tgz#3abe43aef3835f8ae077d136ddce0f276b0400e6"
   integrity sha1-Or5DrvODX4rgd9E23c4PJ2sEAOY=
+
+earcut@^2.1.1:
+  version "2.2.3"
+  resolved "http://192.168.4.61:4873/earcut/-/earcut-2.2.3.tgz#d44ced2ff5a18859568e327dd9c7d46b16f55cf4"
+  integrity sha1-1EztL/WhiFlWjjJ92cfUaxb1XPQ=
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -4373,6 +4388,18 @@ flatted@^3.1.0:
   version "3.2.5"
   resolved "http://192.168.4.61:4873/flatted/-/flatted-3.2.5.tgz#76c8584f4fc843db64702a6bd04ab7a8bd666da3"
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
+
+flubber@^0.4.2:
+  version "0.4.2"
+  resolved "http://192.168.4.61:4873/flubber/-/flubber-0.4.2.tgz#14452d4a838cc3b9f2fb6175da94e35acd55fbaa"
+  integrity sha512-79RkJe3rA4nvRCVc2uXjj7U/BAUq84TS3KHn6c0Hr9K64vhj83ZNLUziNx4pJoBumSPhOl5VjH+Z0uhi+eE8Uw==
+  dependencies:
+    d3-array "^1.2.0"
+    d3-polygon "^1.0.3"
+    earcut "^2.1.1"
+    svg-path-properties "^0.2.1"
+    svgpath "^2.2.1"
+    topojson-client "^3.0.0"
 
 follow-redirects@^1.0.0:
   version "1.14.9"
@@ -7350,6 +7377,14 @@ rc-progress@~3.2.1:
     classnames "^2.2.6"
     rc-util "^5.16.1"
 
+rc-queue-anim@^2.0.0:
+  version "2.0.0"
+  resolved "http://192.168.4.61:4873/rc-queue-anim/-/rc-queue-anim-2.0.0.tgz#e78cf9c0f333cb41327e9ed603357f156d0ddce2"
+  integrity sha512-tojpP72NbaWkwzmR/7x4gFpTBCYR/8I3Jb+KwSdOWpRIDrlmsA4ARAqSElG92GJ7CXAIjxavIGulcqJhXfzHYQ==
+  dependencies:
+    "@babel/runtime" "^7.11.1"
+    tween-one "^1.0.52"
+
 rc-rate@~2.9.0:
   version "2.9.1"
   resolved "http://192.168.4.61:4873/rc-rate/-/rc-rate-2.9.1.tgz#e43cb95c4eb90a2c1e0b16ec6614d8c43530a731"
@@ -7498,6 +7533,15 @@ rc-trigger@^5.0.0, rc-trigger@^5.0.4, rc-trigger@^5.1.2, rc-trigger@^5.2.10:
     rc-align "^4.0.0"
     rc-motion "^2.0.0"
     rc-util "^5.19.2"
+
+rc-tween-one@^3.0.6:
+  version "3.0.6"
+  resolved "http://192.168.4.61:4873/rc-tween-one/-/rc-tween-one-3.0.6.tgz#74e09cdd9da00c27082c8b6f1606dc3bae67797b"
+  integrity sha512-5zTSXyyv7bahDBQ/kJw/kNxxoBqTouttoelw8FOVOyWqmTMndizJEpvaj1N+yES5Xjss6Y2iVw+9vSJQZE8Z6g==
+  dependencies:
+    "@babel/runtime" "^7.11.1"
+    style-utils "^0.3.4"
+    tween-one "^1.0.50"
 
 rc-upload@~4.3.0:
   version "4.3.3"
@@ -8419,6 +8463,11 @@ style-loader@^3.3.1:
   resolved "http://192.168.4.61:4873/style-loader/-/style-loader-3.3.1.tgz#057dfa6b3d4d7c7064462830f9113ed417d38575"
   integrity sha1-BX36az1NfHBkRigw+RE+1BfThXU=
 
+style-utils@^0.3.4, style-utils@^0.3.6:
+  version "0.3.7"
+  resolved "http://192.168.4.61:4873/style-utils/-/style-utils-0.3.7.tgz#ae17e3b23f48073d4573917775471836067bb07d"
+  integrity sha512-IG62AED+qp6WnkSsuIIAHZ2utedukFHVi2E5PjPRXjX9eCMZMzogv6oad0yArPHq9VE0Utl8V7kC/qitQZxkPQ==
+
 stylehacks@^5.1.0:
   version "5.1.0"
   resolved "http://192.168.4.61:4873/stylehacks/-/stylehacks-5.1.0.tgz#a40066490ca0caca04e96c6b02153ddc39913520"
@@ -8466,6 +8515,16 @@ svg-parser@^2.0.2:
   resolved "http://192.168.4.61:4873/svg-parser/-/svg-parser-2.0.4.tgz#fdc2e29e13951736140b76cb122c8ee6630eb6b5"
   integrity sha1-/cLinhOVFzYUC3bLEiyO5mMOtrU=
 
+svg-path-properties@^0.2.1:
+  version "0.2.2"
+  resolved "http://192.168.4.61:4873/svg-path-properties/-/svg-path-properties-0.2.2.tgz#b073d81be7292eae0e233ab8a83f58dc27113296"
+  integrity sha512-GmrB+b6woz6CCdQe6w1GHs/1lt25l7SR5hmhF8jRdarpv/OgjLyuQygLu1makJapixeb1aQhP/Oa1iKi93o/aQ==
+
+svg-path-properties@^1.0.4:
+  version "1.0.11"
+  resolved "http://192.168.4.61:4873/svg-path-properties/-/svg-path-properties-1.0.11.tgz#d804b77dea286ddd56bd182548b9c4f5980dcf83"
+  integrity sha512-Wo6SjzONZPL9UAgrnwcCkDGRYP9CbHJGkNcPFIgEVRjiOiJxSd/AtwnGk/4N4iOLGUoas57TMxY0xASDeb9YJg==
+
 svgo@^1.2.2:
   version "1.3.2"
   resolved "http://192.168.4.61:4873/svgo/-/svgo-1.3.2.tgz#b6dc511c063346c9e415b81e43401145b96d4167"
@@ -8497,6 +8556,11 @@ svgo@^2.7.0:
     csso "^4.2.0"
     picocolors "^1.0.0"
     stable "^0.1.8"
+
+svgpath@^2.2.1:
+  version "2.5.0"
+  resolved "http://192.168.4.61:4873/svgpath/-/svgpath-2.5.0.tgz#d57434641d9aa9abae02a4038ebf281fa3005b10"
+  integrity sha512-o/vohwqjUO9nDAh4rcjE3KaW/v//At8UJu2LJMybXidf5QLQLVA4bxH0//4YCsr+1H4Gw1Wi/Jc62ynzSBYidw==
 
 symbol-tree@^3.2.4:
   version "3.2.4"
@@ -8640,6 +8704,13 @@ toidentifier@1.0.1:
   resolved "http://192.168.4.61:4873/toidentifier/-/toidentifier-1.0.1.tgz#3be34321a88a820ed1bd80dfaa33e479fbb8dd35"
   integrity sha1-O+NDIaiKgg7RvYDfqjPkefu43TU=
 
+topojson-client@^3.0.0:
+  version "3.1.0"
+  resolved "http://192.168.4.61:4873/topojson-client/-/topojson-client-3.1.0.tgz#22e8b1ed08a2b922feeb4af6f53b6ef09a467b99"
+  integrity sha1-Iuix7QiiuSL+60r29Ttu8JpGe5k=
+  dependencies:
+    commander "2"
+
 tough-cookie@^4.0.0:
   version "4.0.0"
   resolved "http://192.168.4.61:4873/tough-cookie/-/tough-cookie-4.0.0.tgz#d822234eeca882f991f0f908824ad2622ddbece4"
@@ -8694,6 +8765,23 @@ tsutils@^3.21.0:
   integrity sha1-tIcX05TOpsHglpg+7Vjp1hcVtiM=
   dependencies:
     tslib "^1.8.1"
+
+tween-functions@^1.2.0:
+  version "1.2.0"
+  resolved "http://192.168.4.61:4873/tween-functions/-/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
+  integrity sha1-GuOlDnxguz3vd06scHrLynO7w/8=
+
+tween-one@^1.0.50, tween-one@^1.0.52:
+  version "1.1.3"
+  resolved "http://192.168.4.61:4873/tween-one/-/tween-one-1.1.3.tgz#b8a333867ebe1497b550217bf38a3aa43cf6750e"
+  integrity sha512-KJPdCG6zPLUrtvfuzBFiXmOl0lcUXi89a4Y9SC54su3oKtZYpR7AQYdGXwo/YEeXWSNGO4wDnEPpnrZTEcvBiw==
+  dependencies:
+    "@babel/runtime" "^7.11.1"
+    flubber "^0.4.2"
+    raf "^3.4.1"
+    style-utils "^0.3.6"
+    svg-path-properties "^1.0.4"
+    tween-functions "^1.2.0"
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"

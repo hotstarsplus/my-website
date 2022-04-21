@@ -13,6 +13,8 @@
     "@types/react-dom": "^17.0.13",
     "antd": "^4.19.5",
     "jquery": "^3.6.0",
+    "rc-queue-anim": "^2.0.0",
+    "rc-tween-one": "^3.0.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router": "^6.3.0",

@@ -45,19 +45,19 @@ class IndexNav extends React.Component {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/case">
+                                    <Link to="/blog">
                                         {/* <img src={require("./img/dkgw_hyal.png")} alt="行业案例" width="32" height="32" /> */}
                                         BLOG
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/about">
+                                    <Link to="/github" target={"_blank"}>
                                         {/* <img src={require("./img/dkgw_gywm.png")} alt="关于DUCK" width="32" height="32" /> */}
                                         GitHub
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/join">
+                                    <Link to="/show">
                                         {/* <img src={require("./img/dkgw_jrwm.png")} alt="加入我们" width="32" height="32" /> */}
                                         Show
                                     </Link>

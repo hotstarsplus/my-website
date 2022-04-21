@@ -1,4 +1,4 @@
-import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons';
+import { LeftCircleFilled, RightCircleFilled, } from '@ant-design/icons';
 import { Carousel } from 'antd';
 import React from "react";
 import "../App.css";
@@ -26,8 +26,8 @@ export class TopImgView extends React.Component<any, any>{
     public render() {
         return (
             <div className='fatherbody'>
-                <div onClick={this.prev}><LeftCircleOutlined className='prev' /></div>
-                <div onClick={this.next}><RightCircleOutlined className='next' /></div>
+                <div className='prev' onClick={this.prev}><LeftCircleFilled  /></div>
+                <div className='next' onClick={this.next}><RightCircleFilled  /></div>
                 <Carousel
                     dots={false}
                     autoplay={true}
