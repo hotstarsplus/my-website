@@ -34,9 +34,9 @@ export class TopImgView extends React.Component<any, any>{
                     ref={dom => { this.img = dom; }}
                 >
                     <div className='contentStyle'><img src={require("../img/1.jpg")} alt='第一张图片' /></div>
-                    <div className='contentStyle'><img src={require("../img/2.jpg")} alt='' /></div>
-                    <div className='contentStyle'><img src={require("../img/3.jpg")} alt='' /></div>
-                    <div className='contentStyle'><img src={require("../img/4.jpg")} alt='' /></div>
+                    <div className='contentStyle'><img src={require("../img/2.jpg")} alt='第二张图片' /></div>
+                    <div className='contentStyle'><img src={require("../img/3.jpg")} alt='第三张图片' /></div>
+                    <div className='contentStyle'><img src={require("../img/4.jpg")} alt='第四张图片' /></div>
                 </Carousel>
             </div>
         );
